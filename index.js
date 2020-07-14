@@ -7,10 +7,11 @@ if (votingAge > 18) {
 }
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
-let variable1 = 8;
-let variable2 = 10;
-
-
+let i = 1;
+i++;
+if(i <= 5) {
+    console.log(i);
+}
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
