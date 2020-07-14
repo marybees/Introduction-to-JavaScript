@@ -19,9 +19,11 @@ console.log(Number(x));
 
 //Task d: Write a function to multiply a*b 
 
+function multiply(num1, num2) {
+    return num1 * num2;
+}
 
-
-
+console.log(multiply(5,5));
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
