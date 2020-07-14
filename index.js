@@ -116,10 +116,13 @@ function kilometerConverter(kilometers) {
 console.log(kilometerConverter(5))
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
 
+function centimeterConverter(feet) {
+    let centimeters = (feet * 30.48);
+    return centimeters
+}
 
-
+console.log(centimeterConverter(1))
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
