@@ -102,15 +102,18 @@ function winner(me, computerHand) {
 }
    
     let computer = generateComputerHand();
-    console.log(winner('rock', computer))
+    console.log(winner("scissors", computer))
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
+function kilometerConverter(kilometers) {
+    let miles = (kilometers / 1.609);
+    return miles
+}
 
-
-
+console.log(kilometerConverter(5))
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
