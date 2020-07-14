@@ -57,7 +57,7 @@ function dogFeeder (dogWeight, dogAge) {
     }
 }
 
-console.log(dogFeeder(8, 2));
+console.log(dogFeeder(15, 1));
 
 //feeding requirements
 // adult dogs at least 1 year 
@@ -73,10 +73,6 @@ console.log(dogFeeder(8, 2));
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
-
-
-
-
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
 // Your function should take a string (either rock paper or sissors)
@@ -84,8 +80,29 @@ console.log(dogFeeder(8, 2));
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
-  
+function generateComputerHand(){
+    let hands = {0:"rock", 1:"paper", 2:"scissors"};
+    let randomIndex = Math.floor(Math.random() * 3); //a random index is either 0, 1 or 2
+    let computerHand = hands[randomIndex]; //this will produce wither rock, paper or scissors
+    return computerHand
+}
+
+function winner(me, computerHand) {
+    if (me === computerHand) {
+        return "Tied!";
+    } else if (me === "rock" && computerHand === "scissors") {
+        return "You won!";
+    } else if (me === "paper" && computerHand === "rock") {
+        return "You won!";
+    } else if (me === "scissors" && computerHand === "paper") {
+        return "You won!";
+    } else {
+        return "You lost!"; 
+    }
+}
+   
+    let computer = generateComputerHand();
+    console.log(winner('rock', computer))
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
