@@ -39,6 +39,26 @@ console.log(dogYears(33));
 //Dog feeder 
 //takes weight in pounds and age in years (note if the dog is a puppy the age will be a decimal) and returns the number of pounds of raw food to feed in a day.
 
+function dogFeeder (dogWeight, dogAge) {
+    if (dogAge >= 1 && dogWeight <= 5) {
+        return(.05 * dogWeight); 
+    } else if (dogAge >= 1 && (dogWeight >= 6 && dogWeight <= 10)) {
+        return(.04 * dogWeight);
+    } else if (dogAge >= 1 && (dogWeight >= 11 && dogWeight <= 15)) {
+        return(.03 * dogWeight);
+    } else if (dogAge >= 1 && dogWeight > 15) {
+        return(.02 * dogWeight);
+    } else if (dogAge >= .2 && dogAge < .4) {
+        return(.1 * dogWeight);
+    } else if (dogAge >= .4 && dogAge < .7) {
+        return(.05 * dogWeight);
+    } else if (dogAge >= .7 && dogAge < 1) {
+        return(.04 * dogWeight);
+    }
+}
+
+console.log(dogFeeder(8, 2));
+
 //feeding requirements
 // adult dogs at least 1 year 
 // up to 5 lbs - 5% of their body weight
