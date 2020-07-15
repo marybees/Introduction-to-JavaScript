@@ -134,8 +134,6 @@ function annoyingSong(num) {
         let newNum = num-1
         if (num > 1) {
             console.log(num + " bottles of soda on the wall, " + num + " bottles of soda, take one down, pass it around, " + newNum + " bottles of soda on the wall.");
-        } else if (num === 2) {
-            console.log(num + " bottles of soda on the wall, " + num + " bottles of soda, take one down, pass it around, " + newNum + "  bottle of soda on the wall.");
         } else if (num === 1) {
             console.log(num + " bottle of soda on the wall, " + num + " bottle of soda, take one down, pass it around, no bottles of soda on the wall.");
         } else {
@@ -144,7 +142,7 @@ function annoyingSong(num) {
     }   
 }
 
-annoyingSong(8)
+annoyingSong(3)
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
