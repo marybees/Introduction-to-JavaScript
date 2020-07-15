@@ -128,10 +128,21 @@ console.log(centimeterConverter(1))
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-  
 
+function annoyingSong(num) {
+    while(num >= 0) {
+        let newNum = num-1
+        if (num > 1) {
+            console.log(num + " bottles of soda on the wall, " + num + " bottles of soda, take one down, pass it around, " + newNum + " bottles of soda on the wall.");
+        } else if (num === 1) {
+            console.log(num + " bottle of soda on the wall, " + num + " bottle of soda, take one down, pass it around, no bottles of soda on the wall.");
+        } else {
+            console.log("You're out of sodas!") } 
+        num-- 
+    }   
+}
 
-
+annoyingSong(10)
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
@@ -141,10 +152,22 @@ console.log(centimeterConverter(1))
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
 
-  
-  
+function gradeCalculator() {
+    if (grade >= 90 && grade <= 99) {
+        return "A";
+    } else if (grade >= 80 && grade <= 89) {
+        return "B";
+    } else if (grade >= 70 && grade <= 79) {
+        return "C";
+    } else if (grade >= 60 && grade <= 69) {
+        return "D";
+    } else if (grade <=59) {
+        return "F";
+    }
+}
+
+gradeCalculator(10)
 
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
